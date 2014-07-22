@@ -1,0 +1,125 @@
+*********for bomlinkexport
+in getintagvaluet=null
+in eElement=UPDATECOUNTA2
+java.lang.NumberFormatException: null
+        at java.lang.Integer.parseInt(Integer.java:417)
+        at java.lang.Integer.parseInt(Integer.java:499)
+        at com.qiwkreports.common.XMLValueUtil.getIntTagValue(XMLValueUtil.java:
+132)
+        at com.qiwkreports.service.QiwkBOMLinkService.setProperty(QiwkBOMLinkSer
+vice.java:289)
+        at com.qiwkreports.service.QiwkBOMLinkService.loadBOMLinkFRMode(QiwkBOML
+inkService.java:124)
+        at com.qiwkreports.service.QiwkBOMLinkService.processAndLoadBOMLink(Qiwk
+BOMLinkService.java:47)
+        at com.qiwkreports.service.QiwkBOMLinkService.processLoadService(QiwkBOM
+LinkService.java:33)
+        at com.qiwkreports.extraction.ExtractorThread.run(ExtractorThread.java:6
+7)
+        at java.lang.Thread.run(Thread.java:662)
+Exception occurred:Exception in com.qiwkreports.service.QiwkBOMLinkService
+java.lang.RuntimeException: Exception in com.qiwkreports.service.QiwkBOMLinkServ
+ice
+        at com.qiwkreports.transformation.QiwkBomLinkExportTransform.transformBO
+MLinksExport(QiwkBomLinkExportTransform.java:168)
+        at com.qiwkreports.extraction.QiwkBOMLinkExport.extract(QiwkBOMLinkExpor
+t.java:254)
+        at com.qiwkreports.extraction.QiwkExtractorLoader.runExtractorLoader(Qiw
+kExtractorLoader.java:116)
+        at com.qiwkreports.execution.QiwkETLStep.executeStep(QiwkETLStep.java:99
+)
+        at com.qiwkreports.execution.QiwkETLJob.executeJob(QiwkETLJob.java:426)
+        at com.qiwkreports.execution.QiwkETLQueueManager.executeQiwkETLJobs(Qiwk
+ETLQueueManager.java:37)
+        at com.qiwkreports.execution.QiwkETLExecution.executeETLCycle(QiwkETLExe
+cution.java:47)
+        at com.qiwkreports.execution.QiwkETLExecution.main(QiwkETLExecution.java
+	==================================================================================
+
+	value of strelementexport[{SOURCEID=1156310, CLASSNAMEKEYA4=null, SORTINGNUMBER=
+1, CLASSNAMEKEYA5=null, CLASSNAMEKEYI5=null, NUM20=null, IDA3F5=null, BOMID=1792
+876, INDATE=null, CLASSNAMEKEYB5=null, NUM13=null, NUM14=null, NUM15=null, NUM16
+=null, NUM17=null, DROPPED=null, NUM18=null, NUM19=null, CREATESTAMPA2=null, PRI
+MARYMATERIAL=null, IDA3H5=null, IDA3G5=null, NUM10=null, NUM11=null, NUM12=null,
+ NUM1=0, NUM4=0, NUM5=0, NUM2=0, NUM3=0, CLASSNAMEKEYC5=null, IDA3CONTAINERREFER
+ENCE=null, CLASSNAMEKEYCONTAINERREFEREN=null, NUM9=null, IDA3D5=null, NUM8=null,
+ MASTERBRANCHID=0, NUM7=null, NUM6=null, CLASSNAMEA2A2=null, SEQUENCE=null, MATC
+OLID=0, CLASSNAMEKEYD5=null, ATT20=null, ATT14=, FLEXTYPEIDPATH=\57243\58283, AT
+T15=null, ATT16=null, ATT17=null, ATT10=, ATT11=, ATT12=material1, BRANCHIDA3I5=
+null, ATT13=, IDA3E5=null, ATT18=null, MARKUP=, MASTERBRANCH=0, PARENTREV=null,
+ATT19=null, UPDATECOUNTA2=null, EFFECTIVE=null, ATT30=null, IDA3A5=null, FLEXTYP
+EID=58283, OUTDATE=null, ATT29=null, MATID=57308, CLASSNAMEKEYE5=null, ATT9=, AT
+T24=null, ATT8=white, ATT23=null, ATT7=, SECONDARYMATERIAL=null, ATT22=null, ATT
+6=material1, ATT21=null, ATT5=, ATT28=null, ATT4=back, ATT27=null, ATT3=shell1,
+ATT26=null, ATT2=, ATT25=null, ATT1=, IDA3B5=null, SIZE1=null, SIZE2=null, YIELD
+=null, CLASSNAMEKEYF5=null, COLID=0, UPDATESTAMPA2=null, IDA3C5=null, SuppID=572
+87, BRANCHID=5, DESTINATIONID=0, WIP=null, CLASSNAMEKEYG5=null, DIMENSIONID=-PAR
+ENT:wt.part.WTPartMaster:1792874-REV:A-BRANCH:5, MODIFYSTAMPA2=null, SKUID=11475
+24, MARKFORDELETEA2=0, DATE10=null, DATE1=null, DATE2=null, DATE3=null, DATE4=nu
+ll, CLASSNAMEKEYH5=null, DATE5=null, DATE6=null, BOMLinkBranchID=1792891, DATE7=
+null, DATE8=null, DIMENSIONNAME=, DATE9=null, IDA2A2=1792891}, {SOURCEID=1156310
+, CLASSNAMEKEYA4=null, SORTINGNUMBER=1, CLASSNAMEKEYA5=null, CLASSNAMEKEYI5=null
+, NUM20=null, IDA3F5=null, BOMID=1792876, INDATE=null, CLASSNAMEKEYB5=null, NUM1
+3=null, NUM14=null, NUM15=null, NUM16=null, NUM17=null, DROPPED=null, NUM18=null
+, NUM19=null, CREATESTAMPA2=null, PRIMARYMATERIAL=null, IDA3H5=null, IDA3G5=null
+, NUM10=null, NUM11=null, NUM12=null, NUM1=0, NUM4=0, NUM5=0, NUM2=0, NUM3=0, CL
+ASSNAMEKEYC5=null, IDA3CONTAINERREFERENCE=null, CLASSNAMEKEYCONTAINERREFEREN=nul
+l, NUM9=null, IDA3D5=null, NUM8=null, MASTERBRANCHID=0, NUM7=null, NUM6=null, CL
+ASSNAMEA2A2=null, SEQUENCE=null, MATCOLID=0, CLASSNAMEKEYD5=null, ATT20=null, AT
+T14=, FLEXTYPEIDPATH=\57243\58283, ATT15=null, ATT16=null, ATT17=null, ATT10=, A
+TT11=, ATT12=material1, BRANCHIDA3I5=null, ATT13=, IDA3E5=null, ATT18=null, MARK
+UP=, MASTERBRANCH=0, PARENTREV=null, ATT19=null, UPDATECOUNTA2=null, EFFECTIVE=n
+ull, ATT30=null, IDA3A5=null, FLEXTYPEID=58283, OUTDATE=null, ATT29=null, MATID=
+57308, CLASSNAMEKEYE5=null, ATT9=, ATT24=null, ATT8=blue, ATT23=null, ATT7=, SEC
+ONDARYMATERIAL=null, ATT22=null, ATT6=material1, ATT21=null, ATT5=, ATT28=null,
+ATT4=acc1, ATT27=null, ATT3=accessories, ATT26=null, ATT2=, ATT25=null, ATT1=, I
+DA3B5=null, SIZE1=null, SIZE2=null, YIELD=null, CLASSNAMEKEYF5=null, COLID=0, UP
+DATESTAMPA2=null, IDA3C5=null, SuppID=57287, BRANCHID=6, DESTINATIONID=0, WIP=nu
+ll, CLASSNAMEKEYG5=null, DIMENSIONID=-PARENT:wt.part.WTPartMaster:1792874-REV:A-
+BRANCH:6, MODIFYSTAMPA2=null, SKUID=1147524, MARKFORDELETEA2=0, DATE10=null, DAT
+E1=null, DATE2=null, DATE3=null, DATE4=null, CLASSNAMEKEYH5=null, DATE5=null, DA
+TE6=null, BOMLinkBranchID=1792910, DATE7=null, DATE8=null, DIMENSIONNAME=, DATE9
+=null, IDA2A2=1792910}, {SOURCEID=1156310, CLASSNAMEKEYA4=null, SORTINGNUMBER=1,
+ CLASSNAMEKEYA5=null, CLASSNAMEKEYI5=null, NUM20=null, IDA3F5=null, BOMID=179287
+6, INDATE=null, CLASSNAMEKEYB5=null, NUM13=null, NUM14=null, NUM15=null, NUM16=n
+ull, NUM17=null, DROPPED=null, NUM18=null, NUM19=null, CREATESTAMPA2=null, PRIMA
+RYMATERIAL=null, IDA3H5=null, IDA3G5=null, NUM10=null, NUM11=null, NUM12=null, N
+UM1=0, NUM4=0, NUM5=0, NUM2=0, NUM3=0, CLASSNAMEKEYC5=null, IDA3CONTAINERREFEREN
+CE=null, CLASSNAMEKEYCONTAINERREFEREN=null, NUM9=null, IDA3D5=null, NUM8=null, M
+ASTERBRANCHID=0, NUM7=null, NUM6=null, CLASSNAMEA2A2=null, SEQUENCE=null, MATCOL
+ID=0, CLASSNAMEKEYD5=null, ATT20=null, ATT14=, FLEXTYPEIDPATH=\57243\58283, ATT1
+5=null, ATT16=null, ATT17=null, ATT10=label, ATT11=, ATT12=material1, BRANCHIDA3
+I5=null, ATT13=, IDA3E5=null, ATT18=null, MARKUP=, MASTERBRANCH=0, PARENTREV=nul
+l, ATT19=null, UPDATECOUNTA2=null, EFFECTIVE=null, ATT30=null, IDA3A5=null, FLEX
+TYPEID=58283, OUTDATE=null, ATT29=null, MATID=57308, CLASSNAMEKEYE5=null, ATT9=,
+ ATT24=null, ATT8=red, ATT23=null, ATT7=, SECONDARYMATERIAL=null, ATT22=null, AT
+T6=nylon, ATT21=null, ATT5=, ATT28=null, ATT4=label, ATT27=null, ATT3=labelling,
+ ATT26=null, ATT2=, ATT25=null, ATT1=, IDA3B5=null, SIZE1=null, SIZE2=null, YIEL
+D=null, CLASSNAMEKEYF5=null, COLID=0, UPDATESTAMPA2=null, IDA3C5=null, SuppID=57
+287, BRANCHID=7, DESTINATIONID=0, WIP=null, CLASSNAMEKEYG5=null, DIMENSIONID=-PA
+RENT:wt.part.WTPartMaster:1792874-REV:A-BRANCH:7, MODIFYSTAMPA2=null, SKUID=1147
+524, MARKFORDELETEA2=0, DATE10=null, DATE1=null, DATE2=null, DATE3=null, DATE4=n
+ull, CLASSNAMEKEYH5=null, DATE5=null, DATE6=null, BOMLinkBranchID=1792889, DATE7
+=null, DATE8=null, DIMENSIONNAME=, DATE9=null, IDA2A2=1792889}, {SOURCEID=115631
+0, CLASSNAMEKEYA4=null, SORTINGNUMBER=1, CLASSNAMEKEYA5=null, CLASSNAMEKEYI5=nul
+l, NUM20=null, IDA3F5=null, BOMID=1792876, INDATE=null, CLASSNAMEKEYB5=null, NUM
+13=null, NUM14=null, NUM15=null, NUM16=null, NUM17=null, DROPPED=null, NUM18=nul
+l, NUM19=null, CREATESTAMPA2=null, PRIMARYMATERIAL=null, IDA3H5=null, IDA3G5=nul
+l, NUM10=null, NUM11=null, NUM12=null, NUM1=0, NUM4=0, NUM5=0, NUM2=0, NUM3=0, C
+LASSNAMEKEYC5=null, IDA3CONTAINERREFERENCE=null, CLASSNAMEKEYCONTAINERREFEREN=nu
+ll, NUM9=null, IDA3D5=null, NUM8=null, MASTERBRANCHID=0, NUM7=null, NUM6=null, C
+LASSNAMEA2A2=null, SEQUENCE=null, MATCOLID=0, CLASSNAMEKEYD5=null, ATT20=null, A
+TT14=, FLEXTYPEIDPATH=\57243\58283, ATT15=null, ATT16=null, ATT17=null, ATT10=,
+ATT11=, ATT12=material10, BRANCHIDA3I5=null, ATT13=, IDA3E5=null, ATT18=null, MA
+RKUP=, MASTERBRANCH=0, PARENTREV=null, ATT19=null, UPDATECOUNTA2=null, EFFECTIVE
+=null, ATT30=null, IDA3A5=null, FLEXTYPEID=58283, OUTDATE=null, ATT29=null, MATI
+D=57308, CLASSNAMEKEYE5=null, ATT9=, ATT24=null, ATT8=green, ATT23=null, ATT7=,
+SECONDARYMATERIAL=null, ATT22=null, ATT6=nylon, ATT21=null, ATT5=, ATT28=null, A
+TT4=package1, ATT27=null, ATT3=packaging, ATT26=null, ATT2=, ATT25=null, ATT1=,
+IDA3B5=null, SIZE1=null, SIZE2=null, YIELD=null, CLASSNAMEKEYF5=null, COLID=0, U
+PDATESTAMPA2=null, IDA3C5=null, SuppID=57287, BRANCHID=4, DESTINATIONID=0, WIP=n
+ull, CLASSNAMEKEYG5=null, DIMENSIONID=-PARENT:wt.part.WTPartMaster:1792874-REV:A
+-BRANCH:4-SKU:wt.part.WTPartMaster:1147522, MODIFYSTAMPA2=null, SKUID=1147524, M
+ARKFORDELETEA2=0, DATE10=null, DATE1=null, DATE2=null, DATE3=null, DATE4=null, C
+LASSNAMEKEYH5=null, DATE5=null, DATE6=null, BOMLinkBranchID=1792893, DATE7=null,
+ DATE8=null, DIMENSIONNAME=:SKU, DATE9=null, IDA2A2=1792893}]
